@@ -7,6 +7,6 @@ elif 70 <= nota_aluno <= 79:
     print("C")
 elif 60 <= nota_aluno <= 69:
     print("D")
-else 0
+else 0 <= nota_aluno <= 50
     print("F")
     
