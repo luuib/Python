@@ -7,6 +7,19 @@
 #except ValueError:
  #       print("voce nao digitou a sua idade")
  
- num1 = input ("escreva um numero")
+ num1 = input ("escreva um numero de 0 a 9")
  
- num2= input("escreva um numero")
+ num2 = input("escreva um numero de 10 a 20")
+ 
+    try:
+        num1 =float(input("escreva um numero"))
+        operador= input("Escreva  o operador(+,-):")
+        num2 = float(input("Escreva outro numero"))
+        
+        except ValueError:
+            print("tente novamente")
+            
+            soma = num1 + num2
+                
+                print(f"(O numero {num1} mais o numero {num2} é igual a: {soma}."))
+                
