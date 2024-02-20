@@ -1,13 +1,12 @@
+meses = input ("Escreva seu  mes:")
 
-meses = float(input ("Escreva seu  mes:"))
-
-if meses  ("dezembro,janeiro,fevereiro"):
+if meses ("dezembro","janeiro","fevereiro"):
     categoria = "Verao"
-elif meses ("marco, abril,maio,junho"):
+elif meses ("marco"," abril","maio","junho"):
     categoria = " Outono"
-elif meses ("julho, agosto, setembro"):
+elif meses ("julho"," agosto"," setembro"):
     categoria = "Inverno"
-else: meses ("outubro, novembro")
+else: meses ("outubro"," novembro")
     categoria = "Primavera"
 
 print(f"Você está na categoria: {categoria}.")
