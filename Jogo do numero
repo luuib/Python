@@ -1,0 +1,29 @@
+# Importando a biblioteca random
+import random
+
+# Definindo o número secreto
+numero_secreto = random.randint(1, 100)
+
+# Definindo o número de tentativas
+tentativas = 0
+
+# Loop principal do jogo
+while True:
+    # Incrementando o número de tentativas
+    tentativas += 1
+
+    # Solicitando o palpite do jogador
+    palpite = int(input("Digite seu palpite: "))
+
+    # Verificando se o palpite é igual ao número secreto
+    if palpite == numero_secreto:
+        print("Você acertou! O número secreto era", numero_secreto)
+        print("Você precisou de", tentativas, "tentativas")
+        break
+    elif palpite < numero_secreto:
+        print("Seu palpite é menor que o número secreto.")
+    else:
+        print("Seu palpite é maior que o número secreto.")
+
+# Mensagem final
+print("Fim do jogo!")
