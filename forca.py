@@ -33,7 +33,7 @@ def jogar_forca():
         print("A palavra era " + palavra_secreta)
 
 def obter_palavra_secreta():
-    palavras = ['casa', 'carro', 'bicicleta', 'computador', 'python']
+    palavras = ['casa', 'carro', 'bicicleta', 'computador', 'python','thales','paralelepipedo','carralho','kidbengala']
     return random.choice(palavras)
 
 def desenha_forca(erros):
