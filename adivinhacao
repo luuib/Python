@@ -1,4 +1,5 @@
 import random
+import friv
 
 def jogo_adivinhacao():
     numero_secreto = random.randint(1, 100)
@@ -23,3 +24,8 @@ def jogo_adivinhacao():
         print("Você não conseguiu adivinhar o número secreto em 5 tentativas. O número era", numero_secreto)
 
 jogo_adivinhacao()
+
+friv.escolha_jogos()
+
+if __name__ == "__main__":
+    jogar_forca()
