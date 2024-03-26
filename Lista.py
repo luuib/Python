@@ -1,11 +1,10 @@
-
 lista = ["banana", "maçã", "laranja", "pêra", "uva"]
 
 while True:
   print("O que você deseja fazer com a lista?")
-  print("1. Adicionar um item")
-  print("2. Remover um item")
-  print("3. Exibir a lista")
+  print("1. Quer colocar algo?")
+  print("2. tirar um item")
+  print("3. mostrar a lista")
   print("4. Sair")
 
   opcao = int(input("Digite a sua opção: "))
@@ -26,8 +25,7 @@ while True:
     for item in lista:
       print(f"- {item}")
   elif opcao == 4:
-    print("Saindo...")
+    print("Adeus")
     break
   else:
     print("Opção inválida. Tente novamente.")
-
