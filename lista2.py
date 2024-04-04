@@ -55,8 +55,9 @@ def escolherOpcao(lista):
         print("2 - remover um item da lista")
         print("3 - Mostrar lista")
         print("4 - Gravar lista")
-        print("5 - Ler um arquivo de lista epecifico")
-        print("6 - Sair")
+        print("5 - carregar lista")
+        print("6 - Ler um arquivo de lista epecifico")
+        print("7 - Sair")
 
         opc = input("Digite a opção desejada: ")
 
@@ -69,8 +70,10 @@ def escolherOpcao(lista):
         elif opc == '4':
             gravarLista(lista)
         elif opc == '5':
-            lista = lerArquivoLista()
+            lista = carregarLista()
         elif opc == '6':
+            lista = lerArquivoLista()
+        elif opc == '7':
             sair()
             break
         else:
