@@ -31,7 +31,7 @@ def lerArquivoLista():
     print("Lista de Arquivos disponíveis:")
     for arquivo in arquivos:
         print(arquivo)
-    arquivoEscolhido = input("Digite o nome do arquivo para ler: ")
+    arquivoEscolhido = input("Digite o nome do arquivo: ")
     try:
         with open(arquivoEscolhido, 'r') as f:
             lista = eval(f.read())
@@ -41,14 +41,14 @@ def lerArquivoLista():
         print("Erro ao ler o arquivo:", e)
 
 def sair():
-    print("Saindo do programa...")
+    print("Adeus...")
     exit()
 
 def escolherOpcao(lista):
     while True:
         print(" Escolha uma opção:")
         print("1 - Adicionar item na lista")
-        print("2 - Excluir um item da lista")
+        print("2 - remover um item da lista")
         print("3 - Mostrar lista")
         print("4 - Gravar lista")
         print("5 - Ler um arquivo de lista epecifico")
@@ -75,11 +75,3 @@ def escolherOpcao(lista):
 if __name__ == "__main__":
     lista = []
     escolherOpcao(lista)
-            arquivo.write(item + "\n")
-      print(f"Gravado",nome_arq)
-
-  elif opcao == 5:
-    print("Adeus")
-    break
-  else:
-    print("Opção inválida. Tente novamente.")
